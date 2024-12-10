@@ -75,18 +75,3 @@ function autoplayCarousel() {
 autoplayCarousel();
 
 
-//ancla para el scroll
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
-      $("#scrollToTop").fadeIn(); // Mostrar el botón
-    } else {
-      $("#scrollToTop").fadeOut(); // Ocultar el botón
-    }
-  });
-
-  $("#scrollToTop").click(function (e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, 600);
-  });
-});

@@ -14,11 +14,11 @@
 
   <link rel="icon" href="imagenes/logo.png">
   <!-- estilos locales -->
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="CSS/estilos.css">
   <link rel="stylesheet" href="CSS/Mobile.css">
   <link rel="stylesheet" href="CSS/Tablet.css">
-  <link rel="stylesheet" href="carousel.css">
-  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="CSS/carousel.css">
+  <link rel="stylesheet" href="CSS/modal.css">
   <link rel="stylesheet" href="Librerias/fancybox.css">
   <title>Laser Pro </title>
 </head>
@@ -29,12 +29,12 @@
   <!-- utilizar estilo de escritura kebab-case -->
 
   <!-- flecha para redirigir al inicio de la pagina -->
-  <a href="#top" id="scrollToTop"><i class="fas fa-arrow-up"></i>
+  <a href="#top" id="scrollToTop" class="btn-arriba"><i class="fas fa-arrow-up"></i>
   </a>
-  
+
   <!-- seccion 1: Header -->
   <header id="top" class="header">
-    
+
     <section class="header-seccion">
       <div class="header-contenido-redes-sociales">
         <i class="fab fa-facebook"></i>
@@ -57,14 +57,14 @@
   <!-- seccion 2: menu de navegacion -->
   <nav class="nav-menu">
     <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Pircing</a></li>
-      <li><a href="#">Testimonial</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#ABOUT">About</a></li>
+      <li><a href="#SERVICES">Services</a></li>
+      <li><a href="#PORTAFOLIO">Portfolio</a></li>
+      <li><a href="#TEAM">Team</a></li>
+      <li><a href="#PIRCING">Pircing</a></li>
+      <li><a href="#TESTIMONIAL">Testimonial</a></li>
+      <li><a href="#BLOG">Blog</a></li>
+      <li><a href="#CONTACT">Contact</a></li>
     </ul>
   </nav>
 
@@ -72,18 +72,16 @@
   <!-- seccion 3: Main-->
   <main class="principal">
     <div class="principal-contenido1">
-     
+
       <div class="principal-contenido1-card">
-        
         <h1>
           A Wide Range of Waxing Services
         </h1>
         <p>
           How To Full Body Wax
         </p>
-
       </div>
-     
+
       <div class="principal-contenido1-card-img">
         <img src="imagenes/Main.jpg" alt="">
       </div>
@@ -92,10 +90,10 @@
   </main>
 
   <!-- seccion 4: About -->
-  <section class="about">
-    <div class="filter"></div>
+  <section id="ABOUT" class="about">
+    <div class="filtro"></div>
     <div class="about-container">
-     
+
       <div class="about-content">
         <h1>International Wax Shop</h1>
         <p>
@@ -104,6 +102,7 @@
           consectetur.
         </p>
         <div class="about-services">
+          
           <div class="service">
             <i class="fas fa-hand-sparkles"></i>
             <div>
@@ -114,6 +113,7 @@
               </p>
             </div>
           </div>
+          
           <div class="service">
             <i class="fas fa-hand-sparkles"></i>
             <div>
@@ -124,9 +124,10 @@
               </p>
             </div>
           </div>
+
         </div>
       </div>
-  
+
       <!-- Imágenes -->
       <div class="about-images">
         <div class="image-container">
@@ -139,21 +140,21 @@
 
     </div>
   </section>
-  
+
   <!-- seccion 5: Services -->
-  
-  <section class="servicios">
-    
+
+  <section id="SERVICES" class="servicios">
+
     <div class="titulos">
       <h3>What We Do</h3>
-      <h2><span>Our</span> Services</h2>
+      <h2><span class="span">Our</span> Services</h2>
     </div>
-  
+
     <div class="servicio-content">
-     
+
       <div class="service-card">
         <h4>01</h4>
-        <h3>Underarm Waxing</h3>
+        <h2>Underarm Waxing</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod Lorem ipsum.</p>
         <div class="service-icon">
           <i class="fas fa-plus"></i>
@@ -162,11 +163,11 @@
           <p>Additional information about this service goes here. You can describe the service in detail.</p>
         </div>
       </div>
-  
-     
+
+
       <div class="service-card">
         <h4>02</h4>
-        <h3>Hands & Feet</h3>
+        <h2>Hands & Feet</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
         <div class="service-icon">
           <i class="fas fa-plus"></i>
@@ -175,11 +176,11 @@
           <p>Additional information about this service goes here. You can describe the service in detail.</p>
         </div>
       </div>
-  
-     
+
+
       <div class="service-card">
         <h4>03</h4>
-        <h3>Pedicure</h3>
+        <h2>Pedicure</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
         <div class="service-icon">
           <i class="fas fa-plus"></i>
@@ -191,41 +192,43 @@
     </div>
 
   </section>
-  
+
   <!-- MODAL -->
   <section id="modal" class="fondomodal">
-   
+
     <div id="modal" class="modal">
-  
+
       <div class="contenidomodal">
-        
+
         <div class="alineacion_cerrar">
           <i id="cerrar_modal" class="cerrarmodal fas fa-times"></i>
         </div>
 
         <article class="contenido-modal-info">
-          <h1>Join Our Newsletter</h1> 
+          <h1>Join Our Newsletter</h1>
           <p>
-            Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui posuere.
+            Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur
+            aliquet quam id dui posuere.
           </p>
         </article>
-        
+
         <form class="form-modal">
           <input type="email" placeholder="Email Address" />
           <button type="submit">Subscribe</button>
         </form>
         <a href="#">Don´t show again</a>
-        
-  
+
+
       </div>
-    
+
     </div>
   </section>
- 
+
   <!--seccion 6: portafolio  -->
-  <section class="portafolio">
+  <section id="PORTAFOLIO" class="portafolio">
+    <br><br>
     <div class="titulos">
-      <h2> <span>Our</span> Portfolio</h2>
+      <h2> <span class="span">Our</span> Portfolio</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deserunt hic natus eum adipisci optio maxime itaque
         et.Lorem ipsum dolor sit amet
@@ -239,136 +242,278 @@
             <img src="imagenes/Portafolio-IMG1.jpg" alt="" />
           </figure>
         </a>
-  
+
         <a data-fancybox="gallery" data-src="imagenes/Portafolio-IMG2.jpg" data-caption="FOTO 2 GALERIA">
           <figure>
             <img src="imagenes/Portafolio-IMG2.jpg" alt="" />
           </figure>
         </a>
-  
+
         <a data-fancybox="gallery" data-src="imagenes/Portafolio-IMG3.jpg" data-caption="FOTO 3 GALERIA">
           <figure>
             <img src="imagenes/Portafolio-IMG3.jpg" alt="" />
           </figure>
         </a>
-  
+
         <a data-fancybox="gallery" data-src="imagenes/Portafolio-IMG4.jpg" data-caption="FOTO 4 GALERIA">
           <figure>
             <img src="imagenes/Portafolio-IMG4.jpg" alt="" />
           </figure>
         </a>
-  
+
       </div>
-  
+
     </div>
 
   </section>
 
   <!-- Seccion 7 : Equipo -->
-  <section id="carousel" class="equipo">
-
-    <div id="slide-container">
-      <article class="slide" data-slideIndex="0">
-        <img src="imagenes/EQUIPO1.jpg" alt="Andrew Simon">
-        <div class="team-info">
-          <h2>Andrew Simon</h2>
+   <section id="TEAM" class="equipo-content">
+    <div id="carousel" class="equipo">
+      <div class="titulos">
+        <h2> <span class="span">Our</span> Team</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deserunt hic natus eum adipisci optio maxime itaque
+          et.Lorem ipsum dolor sit amet
+        </p>
+      </div>
+      <div id="slide-container">
+        <article class="slide" data-slideIndex="0">
+          <img src="imagenes/EQUIPO1.jpg" alt="Andrew Simon">
+          <div class="team-info">
+            <h2>Andrew Simon</h2>
+            <p>Founder</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </article>
+        
+  
+        <article class="slide" data-slideIndex="1">
+          <img src="imagenes/EQUIPO2.jpg" alt="">
+          <h2>Tim Abell</h2>
           <p>Founder</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </article>
-      
-
-      <article class="slide" data-slideIndex="1">
-        <img src="imagenes/EQUIPO2.jpg" alt="">
-        <h2>Tim Abell</h2>
-        <p>Founder</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-      </article>
-
-      <article class="slide" data-slideIndex="2">
-        <img src="imagenes/EQUIPO3.jpg" alt="">
-        <h2>John Doe</h2>
-        <p>Founder</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-      </article>
-
-      <article class="slide" data-slideIndex="3">
-        <img src="imagenes/EQUIPO2.jpg" alt="">
-        <h2>Isabella Smith</h2>
-        <p>Founder</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-      </article>
-
-      <article class="slide" data-slideIndex="4">
-        <img src="imagenes/EQUIPO1.jpg" alt="">
-        <h2>Olivia Brown</h2>
-        <p>Founder</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-      </article>
-
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </article>
+  
+        <article class="slide" data-slideIndex="2">
+          <img src="imagenes/EQUIPO3.jpg" alt="">
+          <h2>John Doe</h2>
+          <p>Founder</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </article>
+  
+        <article class="slide" data-slideIndex="3">
+          <img src="imagenes/EQUIPO2.jpg" alt="">
+          <h2>Isabella Smith</h2>
+          <p>Founder</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </article>
+  
+        <article class="slide" data-slideIndex="4">
+          <img src="imagenes/EQUIPO1.jpg" alt="">
+          <h2>Olivia Brown</h2>
+          <p>Founder</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </article>
+  
+      </div>
+  
+      <!-- flechas de izquierda y derecha -->
+      <div class="contenedor_flechas">
+        <a href="#" id="back-button" class="arrow back">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+  
+        <a href="#" id="forward-button" class="arrow forward">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+  
+      <div class="slide-indicators">
+        <div class="slide-indicator active"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+      </div>
+  
     </div>
-
-    <!-- flechas de izquierda y derecha -->
-    <div class="contenedor_flechas">
-      <a href="#" id="back-button" class="arrow back">
-        <i class="fa-solid fa-chevron-left"></i>
-      </a>
-
-      <a href="#" id="forward-button" class="arrow forward">
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </div>
-
-    <div class="slide-indicators">
-      <div class="slide-indicator active"></div>
-      <div class="slide-indicator"></div>
-      <div class="slide-indicator"></div>
-      <div class="slide-indicator"></div>
-      <div class="slide-indicator"></div>
-    </div>
-
-  </section>
+   </section>
+ 
 
   <!-- seccion 8 : Pircing -->
-  <section class="pircing">
+  <section id="PIRCING" class="pircing">
+    <div class="titulos">
+      <h2> <span class="span">Our</span> Pircing</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deserunt hic natus eum adipisci optio maxime itaque
+        et.Lorem ipsum dolor sit amet
+      </p>
+    </div>
+
+    <section class="pircing-slide">
+      <ul class="rslides">
+        <li>
+          <img src="imagenes/slide1.webp" alt="">
+        
+          <div class="slide__information">
+            <h1 class="slide__title"></h1>
+            <p class="slide__text">
+        
+            </p>
+          </div>
+        
+        </li>
+
+        <li>
+          <img src="imagenes/slide2.webp" alt="">
+        
+          <div class="slide__information">
+            <h1 class="slide__title"></h1>
+            <p class="slide__text">
+        
+            </p>
+          </div>
+        
+        </li>
+        <li>
+          <img src="imagenes/slide3.webp" alt="">
+        
+          <div class="slide__information">
+            <h1 class="slide__title"></h1>
+            <p class="slide__text">
+        
+            </p>
+          </div>
+        
+        </li>
+      </ul>
+
+      <!-- Controles del slider -->
+      <div class="slider-controls">
+        <i class="fas fa-chevron-left slider-prev"></i>
+        <i class="fas fa-chevron-right slider-next"></i>
+      </div>
+    </section>
   </section>
 
   <!-- Seccion 9: testimonio  -->
-  <section class="testiomonio">
+  <section id="TESTIMONIAL" class="testiomonio">
+    
+    <div class="titulos testimonio-header">
+      <h3>Client's Feedback</h3>
+      <h2><span class="span">What</span> Clients <span class="span">Say</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa magnam sequi totam ducimus sunt repellat, deserunt molestiae veritatis consequatur, mollitia voluptatum laboriosam alias animi dolores! Atque reiciendis enim harum facere!
+      </p>
+    </div>
+
+    <div class="testimonio-container">
+      <article class="testimonio-video">
+        <div class="contenedor-video">
+          <iframe src="https://www.youtube.com/embed/Cn6KogPAYPI?si=gemOfhN_orZ9uero" frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+      </article>
+      <article class="testimonio-content">
+        <p>
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout.It is a long established fact that a reader will be distracted by the readable content of a page
+          when looking at its layout."
+        </p>
+        <p class="span">Aash Aron</p>
+        <p class="span2">Web designer</p>
+        
+      </article>
+    </div>
+
 
   </section>
 
   <!-- seccion 10: blog -->
-  <section class="blog">
+  <section id="BLOG" class="blog">
+    <div class="titulos testimonio-header">
+      <h2>Our <span>Blog</span></h2>
+    
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa magnam sequi totam ducimus sunt repellat, deserunt molestiae veritatis consequatur, mollitia voluptatum laboriosam alias animi dolores! Atque reiciendis enim harum facere!
+      </p> <br><br>
+    </div>
+
+    <div class="blog-cards">
+      <!-- Card 1 -->
+      <article class="blog-card">
+        <figure class="blog-card-img">
+          <img src="imagenes/BLOG1.jpg" alt="High-Quality Skin Care">
+        </figure>
+       
+        <div class="blog-content">
+          <p class="blog-date">24th March 2023</p>
+          <h3 class="blog-date-title">Who are looking for high-quality skin care</h3>
+          <p>It is a long established fact that a reader will be distracted.</p>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="blog-card">
+        <figure class="blog-card-img">
+          <img src="imagenes/BLOG2.jpg" alt="Quality of the Service">
+        </figure>
+      
+        <div class="blog-content">
+          <p class="blog-date">27th January 2023</p>
+          <h3 class="blog-date-title">We are responsible for the quality of the service</h3>
+          <p>It is a long established fact that a reader will be distracted.</p>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="blog-card">
+        <figure class="blog-card-img">
+          <img src="imagenes/BLOG3.jpg" alt="Exfoliate Before Waxing">
+        </figure>
+       
+        <div class="blog-content">
+          <p class="blog-date">10th June 2023</p>
+          <h3 class="blog-date-title">What's the best way to exfoliate before waxing</h3>
+          <p>It is a long established fact that a reader will be distracted.</p>
+        </div>
+      </article>
+    </div>
 
   </section>
 
   <!-- seccion 11: contacto -->
-  <section class="contacto">
-  
+  <section id="CONTACT" class="contacto">
+
     <div class="contacto-contenedor">
       <!-- Estructura del formulario-->
       <form id="formulario" class="formulario">
+        <div class="titulos "><br><br>
+          <h2>Send <span class="span">a Message</span></h2>
+        
+          <p>
+            Leave us any message, and we will get back to you
+          </p><br><br>
+        </div>
         <div class="formulario-content">
           <input id="nombre" type="text" name="nombre" placeholder="Full Name" />
         </div>
@@ -384,16 +529,16 @@
       </form>
 
     </div>
-  
+
   </section>
-  
-  
- 
+
+
+
 
   <!-- seccion 12 : pie de pagina  -->
   <footer class="footer">
-    
-    <section  class="footer-container">
+
+    <section class="footer-container">
       <!-- Contact Section -->
       <div class="footer-section">
         <h3>Our Contact</h3>
@@ -407,7 +552,7 @@
           <i class="fab fa-linkedin"></i>
         </div>
       </div>
-  
+
       <!-- Solutions Section -->
       <div class="footer-section">
         <h3>Solutions</h3>
@@ -418,7 +563,7 @@
           <li><a href="#">Insights</a></li>
         </ul>
       </div>
-  
+
       <!-- Latest News Section -->
       <div class="footer-section">
         <h3>Latest News</h3>
@@ -437,7 +582,7 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Company Section -->
       <div class="footer-section">
         <h3>Company</h3>
@@ -450,7 +595,7 @@
         </ul>
       </div>
     </section>
-  
+
     <div class="footer-bottom">
       <p>© Daniel Garrido - Web designer</p>
       <div class="footer-links">
@@ -462,10 +607,11 @@
     </div>
 
   </footer>
-  
 
-  <script src="javascript.js"></script>
+
+  <script src="JS/javascript.js"></script>
   <script src="Librerias/carousel.js"></script>
+  <script src="JS/slide.js"></script>
 </body>
 
 </html>

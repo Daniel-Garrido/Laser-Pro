@@ -3,6 +3,16 @@
  Fancybox.bind('[data-fancybox="gallery"]', {
 });
 
+/********DESPLAZAMIENTO DEL MENU DE NAVEGACION *******/
+document.querySelectorAll('.nav-menu a').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault(); // Evita el comportamiento por defecto
+    const targetId = link.getAttribute('href').substring(1); // Obtén el ID del destino
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
+  });
+});
+
 
 //**********************funcion modal******************* 
 //crear funcion modal 

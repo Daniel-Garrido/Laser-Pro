@@ -1,0 +1,77 @@
+@media screen and (max-width: 500px) {
+  
+  .header{
+    display: none;
+  }
+  .nav-menu {
+   display: none;
+  }
+
+  .principal{
+    width: 100%;
+  }
+  .principal-contenido1{
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .principal-contenido1-card-img{
+    width: 100%;
+  }
+
+  .principal-contenido1-card-img img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+  }
+  
+  /* servicios  */
+
+  .servicio-content {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 50px 0px;
+  }
+  
+  /*portafolio*/
+  .portafolio-contenedor-img{
+    width: 90%;
+    grid-template-columns: 1fr ;
+  }
+
+  /* blog  */
+
+  .blog-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+  }
+
+
+  /*contacto*/
+  .formulario{
+    width: 90%;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  input,
+  textarea {
+    width: 280px;
+    padding: 10px;
+   
+  }
+  textarea {
+    resize: none;
+    height: 50px;
+  }
+  
+  
+
+  
+}
