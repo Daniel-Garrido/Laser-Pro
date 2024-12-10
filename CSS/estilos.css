@@ -181,7 +181,7 @@ p{
 
 
 /* seccion 2: menu de navegacion  */
-.nav-menu {
+/* .nav-menu {
   padding: 5px 0;
   border-bottom: 1px solid #e1e1e1;
 }
@@ -213,8 +213,129 @@ p{
 .nav-menu ul li a:hover {
   color: var(--color-secundario);
   transition: color 0.5s ease;
+} */
+
+/**********************************************/
+/* Contenedor del menú */
+/* Estilo general para el menú */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-primario);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  transition: right 0.3s ease;
+  z-index: 1000;
 }
 
+.menu-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.menu-logo {
+  width: 120px;
+}
+
+#close-menu {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-texto2);
+}
+
+/* Lista del menú */
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-menu ul li {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.nav-menu ul li a {
+  font-size: var(--subtitulos2);
+  text-decoration: none;
+  color: var(--color-fondo);
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: var(--color-secundario);
+}
+
+/* Ícono del menú hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: var(--color-texto2);
+  cursor: pointer;
+}
+
+/* Versión desktop */
+@media (min-width: 768px) {
+  .nav-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .menu-icon,
+  #close-menu {
+    display: none;
+  }
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Ocultado inicialmente */
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-menu.active {
+    right: 0; /* Muestra el menú */
+  }
+}
+
+
+/*******************************************/
 /* seccion 3: main  */
 .principal{
   width: 100%;

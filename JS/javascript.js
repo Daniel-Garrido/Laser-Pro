@@ -13,6 +13,26 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
   });
 });
 
+/*Menu para dispositivos moviles */
+
+$(document).ready(function () {
+  // Abrir menú
+  $('#menu-icon').on('click', function () {
+    $('#nav-menu').addClass('active');
+  });
+
+  // Cerrar menú
+  $('#close-menu').on('click', function () {
+    $('#nav-menu').removeClass('active');
+  });
+
+  // Cerrar menú al hacer clic en un enlace
+  $('.nav-menu a').on('click', function () {
+    $('#nav-menu').removeClass('active');
+  });
+});
+
+
 
 //**********************funcion modal******************* 
 //crear funcion modal 
