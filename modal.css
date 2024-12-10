@@ -1,0 +1,75 @@
+/* fondo del modal */
+.fondomodal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+/* contenedor principal */
+.modal{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Contenido modal  */
+.contenidomodal {
+  width: 40%;
+  background-image: url(imagenes/MODAL.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  
+}
+
+.alineacion_cerrar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contenido-modal-info{
+  padding: 10px;
+}
+
+.contenido-modal-info h1, p{
+  padding: 10px;
+}
+
+.form-modal{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+ 
+}
+.form-modal input{
+  width: 80%;
+}
+/* activar el modal */
+.mostrar {
+  display: flex;
+}
+
+/* cerrar el modal */
+.cerrarmodal {
+  cursor: pointer;
+  color: white;
+  font-size: 26px;
+  transition: all 0.7s;
+}
+

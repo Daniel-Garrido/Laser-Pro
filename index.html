@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- libreria JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- libreria fontAwesome -->
+  <script src="https://kit.fontawesome.com/eb00b890a6.js" crossorigin="anonymous"></script>
+
+  <!-- libreria fancybox -->
+  <script src="Librerias/fancybox.js"></script>
+
+  <link rel="icon" href="imagenes/logo.png">
+  <!-- estilos locales -->
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="CSS/Mobile.css">
+  <link rel="stylesheet" href="CSS/Tablet.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="Librerias/fancybox.css">
+  <title>Laser Pro </title>
+</head>
+
+<body>
+
+  <!-- dividir proyecto por secciones -->
+  <!-- utilizar estilo de escritura kebab-case -->
+
+  <!-- flecha para redirigir al inicio de la pagina -->
+  <a href="#top" id="scrollToTop"><i class="fas fa-arrow-up"></i>
+  </a>
+  
+  <!-- seccion 1: Header -->
+  <header id="top" class="header">
+    
+    <section class="header-seccion">
+      <div class="header-contenido-redes-sociales">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-google"></i>
+      </div>
+      <figure class="header-contenido-logo">
+        <img src="imagenes/logo.png" alt="">
+      </figure>
+      <div id="boton" class="header-contenido-btn-contacto">
+        <button id="boton-modal" class="btn">
+          <a href="#">Contacto</a>
+        </button>
+      </div>
+    </section>
+
+  </header>
+
+  <!-- seccion 2: menu de navegacion -->
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Pircing</a></li>
+      <li><a href="#">Testimonial</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- seccion 3: Main-->
+  <main class="principal">
+    <div class="principal-contenido1">
+     
+      <div class="principal-contenido1-card">
+        
+        <h1>
+          A Wide Range of Waxing Services
+        </h1>
+        <p>
+          How To Full Body Wax
+        </p>
+
+      </div>
+     
+      <div class="principal-contenido1-card-img">
+        <img src="imagenes/Main.jpg" alt="">
+      </div>
+
+    </div>
+  </main>
+
+  <!-- seccion 4: About -->
+  <section class="about">
+    <div class="filter"></div>
+    <div class="about-container">
+     
+      <div class="about-content">
+        <h1>International Wax Shop</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. It is a long
+          established fact that a reader will be Lorem ipsum dolor sit amet
+          consectetur.
+        </p>
+        <div class="about-services">
+          <div class="service">
+            <i class="fas fa-hand-sparkles"></i>
+            <div>
+              <h3>Upper Body Waxing</h3>
+              <p>
+                It is a long established fact that a reader will be distracted by
+                the readable content.
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <i class="fas fa-hand-sparkles"></i>
+            <div>
+              <h3>Lower Body Waxing</h3>
+              <p>
+                It is a long established fact that a reader will be distracted by
+                the readable content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Imágenes -->
+      <div class="about-images">
+        <div class="image-container">
+          <img src="imagenes/400x280.jpg" alt="Service 1" />
+        </div>
+        <div class="image-container">
+          <img src="imagenes/370x250.jpg" alt="Service 2" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- seccion 5: Services -->
+  
+  <section class="servicios">
+    
+    <div class="titulos">
+      <h3>What We Do</h3>
+      <h2><span>Our</span> Services</h2>
+    </div>
+  
+    <div class="servicio-content">
+     
+      <div class="service-card">
+        <h4>01</h4>
+        <h3>Underarm Waxing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod Lorem ipsum.</p>
+        <div class="service-icon">
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="service-details" style="display: none;">
+          <p>Additional information about this service goes here. You can describe the service in detail.</p>
+        </div>
+      </div>
+  
+     
+      <div class="service-card">
+        <h4>02</h4>
+        <h3>Hands & Feet</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+        <div class="service-icon">
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="service-details" style="display: none;">
+          <p>Additional information about this service goes here. You can describe the service in detail.</p>
+        </div>
+      </div>
+  
+     
+      <div class="service-card">
+        <h4>03</h4>
+        <h3>Pedicure</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+        <div class="service-icon">
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="service-details" style="display: none;">
+          <p>Additional information about this service goes here. You can describe the service in detail.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <!-- MODAL -->
+  <section id="modal" class="fondomodal">
+   
+    <div id="modal" class="modal">
+  
+      <div class="contenidomodal">
+        
+        <div class="alineacion_cerrar">
+          <i id="cerrar_modal" class="cerrarmodal fas fa-times"></i>
+        </div>
+
+        <article class="contenido-modal-info">
+          <h1>Join Our Newsletter</h1> 
+          <p>
+            Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui posuere.
+          </p>
+        </article>
+        
+        <form class="form-modal">
+          <input type="email" placeholder="Email Address" />
+          <button type="submit">Subscribe</button>
+        </form>
+        <a href="#">Don´t show again</a>
+        
+  
+      </div>
+    
+    </div>
+  </section>
+ 
+  <!--seccion 6: portafolio  -->
+  <section class="portafolio">
+    <div class="titulos">
+      <h2> <span>Our</span> Portfolio</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deserunt hic natus eum adipisci optio maxime itaque
+        et.Lorem ipsum dolor sit amet
+      </p>
+    </div>
+
+    <div class="portafolio-contenedor">
+      <div class="portafolio-contenedor-img">
+        <a data-fancybox="gallery" data-src="imagenes/Portafolio-IMG1.jpg" data-caption="FOTO 1 GALERIA">
+          <figure>
+            <img src="imagenes/Portafolio-IMG1.jpg" alt="" />
+          </figure>
+        </a>
+  
+        <a data-fancybox="gallery" data-src="imagenes/Portafolio-IMG2.jpg" data-caption="FOTO 2 GALERIA">
+          <figure>
+            <img src="imagenes/Portafolio-IMG2.jpg" alt="" />
+          </figure>
+        </a>
+  
+        <a data-fancybox="gallery" data-src="imagenes/Portafolio-IMG3.jpg" data-caption="FOTO 3 GALERIA">
+          <figure>
+            <img src="imagenes/Portafolio-IMG3.jpg" alt="" />
+          </figure>
+        </a>
+  
+        <a data-fancybox="gallery" data-src="imagenes/Portafolio-IMG4.jpg" data-caption="FOTO 4 GALERIA">
+          <figure>
+            <img src="imagenes/Portafolio-IMG4.jpg" alt="" />
+          </figure>
+        </a>
+  
+      </div>
+  
+    </div>
+
+  </section>
+
+  <!-- Seccion 7 : Equipo -->
+  <section id="carousel" class="equipo">
+
+    <div id="slide-container">
+      <article class="slide" data-slideIndex="0">
+        <img src="imagenes/EQUIPO1.jpg" alt="Andrew Simon">
+        <div class="team-info">
+          <h2>Andrew Simon</h2>
+          <p>Founder</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </article>
+      
+
+      <article class="slide" data-slideIndex="1">
+        <img src="imagenes/EQUIPO2.jpg" alt="">
+        <h2>Tim Abell</h2>
+        <p>Founder</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </article>
+
+      <article class="slide" data-slideIndex="2">
+        <img src="imagenes/EQUIPO3.jpg" alt="">
+        <h2>John Doe</h2>
+        <p>Founder</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </article>
+
+      <article class="slide" data-slideIndex="3">
+        <img src="imagenes/EQUIPO2.jpg" alt="">
+        <h2>Isabella Smith</h2>
+        <p>Founder</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </article>
+
+      <article class="slide" data-slideIndex="4">
+        <img src="imagenes/EQUIPO1.jpg" alt="">
+        <h2>Olivia Brown</h2>
+        <p>Founder</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </article>
+
+    </div>
+
+    <!-- flechas de izquierda y derecha -->
+    <div class="contenedor_flechas">
+      <a href="#" id="back-button" class="arrow back">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+
+      <a href="#" id="forward-button" class="arrow forward">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+
+    <div class="slide-indicators">
+      <div class="slide-indicator active"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+    </div>
+
+  </section>
+
+  <!-- seccion 8 : Pircing -->
+  <section class="pircing">
+  </section>
+
+  <!-- Seccion 9: testimonio  -->
+  <section class="testiomonio">
+
+  </section>
+
+  <!-- seccion 10: blog -->
+  <section class="blog">
+
+  </section>
+
+  <!-- seccion 11: contacto -->
+  <section class="contacto">
+  
+    <div class="contacto-contenedor">
+      <!-- Estructura del formulario-->
+      <form id="formulario" class="formulario">
+        <div class="formulario-content">
+          <input id="nombre" type="text" name="nombre" placeholder="Full Name" />
+        </div>
+        <div class="formulario-content">
+          <input id="email" type="email" name="email" placeholder="Email" />
+        </div>
+        <div class="formulario-content">
+          <textarea id="mensaje" name="mensaje" placeholder="Leave Us a Message"></textarea>
+        </div>
+        <div class="formulario-content">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+
+    </div>
+  
+  </section>
+  
+  
+ 
+
+  <!-- seccion 12 : pie de pagina  -->
+  <footer class="footer">
+    
+    <section  class="footer-container">
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h3>Our Contact</h3>
+        <p>example@email.com</p>
+        <p>+880 1723 456</p>
+        <p>60 Grant Ave, Central New Road</p>
+        <div class="footer-social">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+  
+      <!-- Solutions Section -->
+      <div class="footer-section">
+        <h3>Solutions</h3>
+        <ul>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Ecommerce</a></li>
+          <li><a href="#">Insights</a></li>
+        </ul>
+      </div>
+  
+      <!-- Latest News Section -->
+      <div class="footer-section">
+        <h3>Latest News</h3>
+        <div class="news-item">
+          <img src="images/news1.jpg" alt="News 1">
+          <div>
+            <p>Laser Hair Removal Explained in 2 Minutes</p>
+            <p><i class="fas fa-calendar-alt"></i> June 4, 2021</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="images/news2.jpg" alt="News 2">
+          <div>
+            <p>Benefits of Laser Hair Removal</p>
+            <p><i class="fas fa-calendar-alt"></i> January 4, 2021</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Company Section -->
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+      </div>
+    </section>
+  
+    <div class="footer-bottom">
+      <p>© Daniel Garrido - Web designer</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+
+  </footer>
+  
+
+  <script src="javascript.js"></script>
+  <script src="Librerias/carousel.js"></script>
+</body>
+
+</html>
