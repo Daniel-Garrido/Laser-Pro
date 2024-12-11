@@ -133,6 +133,28 @@ p{
 .filtro:hover{
   filter: grayscale(0%);
 }
+/* animacion a las redes sociales  */
+.animacion-redes-sociales{
+  perspective: 1000px; 
+}
+
+
+
+/* Estilo base para los íconos */
+.animacion-redes-sociales i {
+  font-size: 24px;
+  color: #555;
+  margin: 0 10px;
+  transition: transform 0.8s ease, color 0.8s ease; 
+  display: inline-block; 
+}
+
+/* Efecto 3D al hacer hover */
+.animacion-redes-sociales i:hover {
+  transform: rotateY(360deg); 
+}
+
+
 
 /* seccion 1: header */
 .header {
@@ -193,12 +215,13 @@ p{
 }
 
 .principal-contenido1{
+  
   width: 80%;
   display: flex;
   margin: auto;
   flex-direction: row;
   align-items: center;
-  padding: 50px 80px 50px 80px;
+  padding: 100px 80px 100px 80px;
   position: relative;
  
 }

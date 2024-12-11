@@ -52,10 +52,10 @@ $("#cerrar_modal").click(function () {
 })
 
 //  tiempo de  3 segundos
- function tiempo() {
-   $("#modal").addClass("mostrar");
- }
-setTimeout(tiempo, 3000);
+  function tiempo() {
+    $("#modal").addClass("mostrar");
+  }
+ setTimeout(tiempo, 3000);
 
 
 // click por fuera

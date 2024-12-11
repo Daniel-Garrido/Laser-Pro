@@ -11,6 +11,8 @@
 
   <!-- libreria fancybox -->
   <script src="Librerias/fancybox.js"></script>
+  <!-- libreria de animaciones -->
+  <link rel="stylesheet" href="Librerias/animate.css">
 
   <link rel="icon" href="imagenes/logo.png">
   <!-- estilos locales -->
@@ -37,7 +39,7 @@
   <header id="top" class="header">
 
     <section class="header-seccion">
-      <div class="header-contenido-redes-sociales">
+      <div class="header-contenido-redes-sociales animacion-redes-sociales">
         <i class="fab fa-facebook"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
@@ -79,7 +81,7 @@
     <div class="principal-contenido1">
 
       <div class="principal-contenido1-card">
-        <h1>
+        <h1 class="card__title animate__animated wow animate__fadeInLeft">
           A Wide Range of Waxing Services
         </h1>
         <p>
@@ -87,7 +89,7 @@
         </p>
       </div>
 
-      <div class="principal-contenido1-card-img">
+      <div class="card__title animate__animated wow animate__fadeInRight  principal-contenido1-card-img">
         <img src="imagenes/Main.jpg" alt="">
       </div>
 
@@ -100,7 +102,7 @@
     <div class="about-container">
 
       <div class="about-content">
-        <h1>International Wax Shop</h1>
+        <h1 class="card__title wow animate__animated animate__fadeInDownBig">International Wax Shop</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. It is a long
           established fact that a reader will be Lorem ipsum dolor sit amet
@@ -151,15 +153,15 @@
   <section id="SERVICES" class="servicios">
 
     <div class="titulos">
-      <h3>What We Do</h3>
-      <h2><span class="span">Our</span> Services</h2>
+      <h3 >What We Do</h3>
+      <h2 class="card__title wow animate__animated animate__fadeInDownBig" ><span class="span">Our</span> Services</h2>
     </div>
 
     <div class="servicio-content">
 
       <div class="service-card">
-        <h4>01</h4>
-        <h2>Underarm Waxing</h2>
+        <h4 class="card__icon wow animate__animated animate__fadeInDown" >01</h4>
+        <h2 class="card__title wow animate__animated animate__backInLeft" >Underarm Waxing</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod Lorem ipsum.</p>
         <div class="service-icon">
           <i class="fas fa-plus"></i>
@@ -171,8 +173,8 @@
 
 
       <div class="service-card">
-        <h4>02</h4>
-        <h2>Hands & Feet</h2>
+        <h4 class="card__icon wow animate__animated animate__fadeInDown" >02</h4>
+        <h2 class="card__title wow animate__animated animate__backInLeft"  >Hands & Feet</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
         <div class="service-icon">
           <i class="fas fa-plus"></i>
@@ -184,8 +186,8 @@
 
 
       <div class="service-card">
-        <h4>03</h4>
-        <h2>Pedicure</h2>
+        <h4 class="card__icon wow animate__animated animate__fadeInDown" >03</h4>
+        <h2 class="card__title wow animate__animated animate__backInLeft"  >Pedicure</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
         <div class="service-icon">
           <i class="fas fa-plus"></i>
@@ -233,8 +235,8 @@
   <section id="PORTAFOLIO" class="portafolio">
     <br><br>
     <div class="titulos">
-      <h2> <span class="span">Our</span> Portfolio</h2>
-      <p>
+      <h2 class="card__title wow animate__animated animate__fadeInDownBig" > <span class="span">Our</span> Portfolio</h2>
+      <p class="card__title wow animate__animated animate__fadeInLeft">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deserunt hic natus eum adipisci optio maxime itaque
         et.Lorem ipsum dolor sit amet
       </p>
@@ -276,20 +278,21 @@
   <section id="TEAM" class="equipo-content">
     <div id="carousel" class="equipo">
       <div class="titulos">
-        <h2> <span class="span">Our</span> Team</h2>
-        <p>
+        <h2 class="card__title wow animate__animated animate__fadeInDownBig"> <span class="span">Our</span> Team</h2>
+        <p class="card__title wow animate__animated animate__fadeInLeft">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deserunt hic natus eum adipisci optio maxime itaque
           et.Lorem ipsum dolor sit amet
         </p>
       </div>
       <div id="slide-container">
         <article class="slide" data-slideIndex="0">
-          <img src="imagenes/EQUIPO1.jpg" alt="Andrew Simon">
+          <img  src="imagenes/EQUIPO1.jpg" alt="Andrew Simon">
           <div class="team-info">
             <h2>Andrew Simon</h2>
             <p>Founder</p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
+            <div class="social-icons animacion-redes-sociales">
+            
+              <a  href="#"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
@@ -301,7 +304,7 @@
           <img src="imagenes/EQUIPO2.jpg" alt="">
           <h2>Tim Abell</h2>
           <p>Founder</p>
-            <div class="social-icons">
+            <div class="social-icon animacion-redes-sociales">
               <a href="#"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -312,7 +315,7 @@
           <img src="imagenes/EQUIPO3.jpg" alt="">
           <h2>John Doe</h2>
           <p>Founder</p>
-            <div class="social-icons">
+            <div class="social-icons animacion-redes-sociales">
               <a href="#"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -323,7 +326,7 @@
           <img src="imagenes/EQUIPO2.jpg" alt="">
           <h2>Isabella Smith</h2>
           <p>Founder</p>
-            <div class="social-icons">
+            <div class="social-icons animacion-redes-sociales">
               <a href="#"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -334,7 +337,7 @@
           <img src="imagenes/EQUIPO1.jpg" alt="">
           <h2>Olivia Brown</h2>
           <p>Founder</p>
-            <div class="social-icons">
+            <div class="social-icons animacion-redes-sociales">
               <a href="#"><i class="fab fa-facebook"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -367,8 +370,8 @@
   <!-- seccion 8 : Pircing -->
   <section id="PIRCING" class="pircing">
     <div class="titulos">
-      <h2> <span class="span">Our</span> Pricing</h2>
-      <p>
+      <h2 class="card__title wow animate__animated animate__fadeInDownBig" > <span class="span">Our</span> Pricing</h2>
+      <p class="card__title wow animate__animated animate__fadeInLeft">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deserunt hic natus eum adipisci optio maxime itaque
         et.Lorem ipsum dolor sit amet
       </p>
@@ -438,15 +441,15 @@
     
     <div class="titulos testimonio-header">
       <h3>Client's Feedback</h3>
-      <h2><span class="span">What</span> Clients <span class="span">Say</span></h2>
-      <p>
+      <h2 class="card__title wow animate__animated animate__fadeInDownBig" ><span class="span">What</span> Clients <span class="span">Say</span></h2>
+      <p class="card__title wow animate__animated animate__fadeInLeft">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa magnam sequi totam ducimus sunt repellat, deserunt molestiae veritatis consequatur, mollitia voluptatum laboriosam alias animi dolores! Atque reiciendis enim harum facere!
       </p>
     </div>
 
     <div class="testimonio-container">
       <article class="testimonio-video">
-        <div class="contenedor-video">
+        <div  class="contenedor-video">
           <iframe src="https://www.youtube.com/embed/Cn6KogPAYPI?si=gemOfhN_orZ9uero" frameborder="0" allowfullscreen>
           </iframe>
         </div>
@@ -469,9 +472,9 @@
   <!-- seccion 10: blog -->
   <section id="BLOG" class="blog">
     <div class="titulos testimonio-header">
-      <h2>Our <span>Blog</span></h2>
+      <h2 class="card__title wow animate__animated animate__fadeInDownBig" >Our <span>Blog</span></h2>
     
-      <p>
+      <p class="card__title wow animate__animated animate__fadeInLeft">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa magnam sequi totam ducimus sunt repellat, deserunt molestiae veritatis consequatur, mollitia voluptatum laboriosam alias animi dolores! Atque reiciendis enim harum facere!
       </p> <br><br>
     </div>
@@ -524,7 +527,7 @@
       <!-- Estructura del formulario-->
       <form id="formulario" class="formulario">
         <div class="titulos "><br><br>
-          <h2>Send <span class="span">a Message</span></h2>
+          <h2 class="card__title wow animate__animated animate__fadeInDownBig">Send <span class="span">a Message</span></h2>
         
           <p>
             Leave us any message, and we will get back to you
@@ -554,7 +557,7 @@
 
     <section class="footer-container">
       <!-- Contact Section -->
-      <div class="footer-section">
+      <div class="footer-section animacion-redes-sociales">
         <h3>Our Contact</h3>
         <p>example@email.com</p>
         <p>+880 1723 456</p>
@@ -626,6 +629,12 @@
   <script src="JS/javascript.js"></script>
   <script src="Librerias/carousel.js"></script>
   <script src="JS/slide.js"></script>
+  <script src="Librerias/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+
 </body>
 
 </html>
