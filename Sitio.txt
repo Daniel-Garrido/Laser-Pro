@@ -1,0 +1,5 @@
+link del repositorio
+https://github.com/Daniel-Garrido/Laser-Pro
+
+link del sitio web
+https://daniel-garrido.github.io/Laser-Pro/ 
