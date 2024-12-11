@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="CSS/Tablet.css">
   <link rel="stylesheet" href="CSS/carousel.css">
   <link rel="stylesheet" href="CSS/modal.css">
+  <link rel="stylesheet" href="CSS/menu.css">
   <link rel="stylesheet" href="Librerias/fancybox.css">
   <title>Laser Pro </title>
 </head>
@@ -33,7 +34,7 @@
   </a>
 
   <!-- seccion 1: Header -->
-  <!-- <header id="top" class="header">
+  <header id="top" class="header">
 
     <section class="header-seccion">
       <div class="header-contenido-redes-sociales">
@@ -52,57 +53,26 @@
       </div>
     </section>
 
-  </header> -->
+  </header>
 
   <!-- seccion 2: menu de navegacion -->
-  <!-- <nav class="nav-menu">
-    <ul>
-      <li><a href="#ABOUT">About</a></li>
-      <li><a href="#SERVICES">Services</a></li>
-      <li><a href="#PORTAFOLIO">Portfolio</a></li>
-      <li><a href="#TEAM">Team</a></li>
-      <li><a href="#PIRCING">Pircing</a></li>
-      <li><a href="#TESTIMONIAL">Testimonial</a></li>
-      <li><a href="#BLOG">Blog</a></li>
-      <li><a href="#CONTACT">Contact</a></li>
-    </ul>
-  </nav> -->
-
- 
-  <header id="top" class="header">
-    <section class="header-seccion">
-      <div class="header-contenido-redes-sociales">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-google"></i>
-      </div>
-      <figure class="header-contenido-logo">
-        <img src="imagenes/logo.png" alt="Logo">
-      </figure>
-      <div id="menu-icon" class="menu-icon">
+  <section id="inicio" class="nav">
+    <nav id="menu" class="nav-menu">
+      <div id="icono_menu">
         <i class="fas fa-bars"></i>
       </div>
-    </section>
-  </header>
-  
-  <nav class="nav-menu" id="nav-menu">
-    <div class="menu-header">
-      <img src="imagenes/logo.png" alt="Logo" class="menu-logo">
-      <i class="fas fa-times" id="close-menu"></i>
-    </div>
-    <ul>
-      <li><a href="#ABOUT">About</a></li>
-      <li><a href="#SERVICES">Services</a></li>
-      <li><a href="#PORTAFOLIO">Portfolio</a></li>
-      <li><a href="#TEAM">Team</a></li>
-      <li><a href="#PIRCING">Pricing</a></li>
-      <li><a href="#TESTIMONIAL">Testimonial</a></li>
-      <li><a href="#BLOG">Blog</a></li>
-      <li><a href="#CONTACT">Contact</a></li>
-    </ul>
-  </nav>
-  
+      <ul id="contenedor_menu">
+        <li><a href="#ABOUT" class="btn_ancla">About</a></li>
+        <li><a href="#SERVICES" class="btn_ancla">Services</a></li>
+        <li><a href="#PORTAFOLIO" class="btn_ancla">Portfolio</a></li>
+        <li><a href="#TEAM" class="btn_ancla">Team</a></li>
+        <li><a href="#PIRCING" class="btn_ancla">Pricing</a></li>
+        <li><a href="#TESTIMONIAL" class="btn_ancla">Testimonial</a></li>
+        <li><a href="#BLOG" class="btn_ancla">Blog</a></li>
+        <li><a href="#CONTACT" class="btn_ancla">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
   
   <!-- seccion 3: Main-->
   <main class="principal">
@@ -249,7 +219,7 @@
 
         <form class="form-modal">
           <input type="email" placeholder="Email Address" />
-          <button type="submit">Subscribe</button>
+          <button class="btn" type="submit">Subscribe</button>
         </form>
         <a href="#">Don´t show again</a>
 

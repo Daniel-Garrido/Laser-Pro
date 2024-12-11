@@ -25,11 +25,13 @@
 }
 /* Contenido modal  */
 .contenidomodal {
-  width: 40%;
-  background-image: url(imagenes/MODAL.jpg);
+  width: 50%;
+
+  background-image: url(../imagenes/MODAL.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px;
+
   
 }
 
@@ -73,3 +75,13 @@
   transition: all 0.7s;
 }
 
+@media screen and (max-width: 500px) {
+ .contenidomodal {
+    width: 90%;
+    background-image: url(../imagenes/MODAL.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    
+  }
+}

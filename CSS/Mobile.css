@@ -1,12 +1,21 @@
 @media screen and (max-width: 500px) {
+  /* estilos generales */
+  p{
+   font-size: 12px !important;
+  }
   
-  /* .header{
+  .titulos h2{
+    font-size: 24px !important;
+  }
+
+  .titulos p{
+   font-size: 14px !important;
+  }
+  .header{
     display: none;
   }
-  .nav-menu {
-   display: none;
-  } */
-
+  
+  /* menu principal  */
   .principal{
     width: 100%;
   }
@@ -15,7 +24,8 @@
     flex-direction: column;
     padding: 10px;
   }
-
+  
+ 
   .principal-contenido1-card-img{
     width: 100%;
   }
@@ -28,8 +38,33 @@
     text-align: center;
     width: 80%;
   }
+
+  /*seccion about*/
+  .about-container {
+    
+    width: 100%;
+    justify-content: left;
+    padding: 50px 0px;
+
+  }
+    .about-content {
+      max-width: 100%;
+      padding: 20px;
+      z-index: 3;
+    }
+
+    .about-content h1 {
+      font-size: 20px;
+    }
   
-  /* servicios  */
+    .about-content p, h3 {
+      font-size: 16px;
+    }
+  
+    .about-images img {
+      display: none;
+    }
+  /***** servicios  ******/
 
   .servicio-content {
     width: 90%;
@@ -43,9 +78,12 @@
     width: 90%;
     grid-template-columns: 1fr ;
   }
-
+  /******** Testimonio **********/
+  .testimonio-header p{
+    width: 100%;
+    
+  }
   /* blog  */
-
   .blog-cards {
     width: 100%;
     display: flex;

@@ -13,22 +13,29 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
   });
 });
 
-/*Menu para dispositivos moviles */
+/***Menu para dispositivos moviles ***/
 
 $(document).ready(function () {
-  // Abrir menú
-  $('#menu-icon').on('click', function () {
-    $('#nav-menu').addClass('active');
+  // Abrir y cerrar el menú al hacer clic en el ícono
+  $("#icono_menu").click(function () {
+    $("#contenedor_menu").toggleClass("abrir_menu");
   });
 
-  // Cerrar menú
-  $('#close-menu').on('click', function () {
-    $('#nav-menu').removeClass('active');
+  // Cerrar el menú al hacer clic en un enlace
+  $(".btn_ancla").click(function () {
+    $("#contenedor_menu").removeClass("abrir_menu");
   });
 
-  // Cerrar menú al hacer clic en un enlace
-  $('.nav-menu a').on('click', function () {
-    $('#nav-menu').removeClass('active');
+  // Suavizar el scroll al navegar por las secciones
+  $(".btn_ancla").on("click", function (e) {
+    e.preventDefault(); // Evitar el comportamiento por defecto
+    const target = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top - 50, // Ajustar el desplazamiento
+      },
+      800 // Duración del scroll 
+    );
   });
 });
 
@@ -45,11 +52,11 @@ $("#cerrar_modal").click(function () {
   $("#modal").removeClass("mostrar");
 })
 
-// tiempo de  3 segundos
-// function tiempo() {
-//   $("#modal").addClass("mostrar");
-// }
-// setTimeout(tiempo, 3000);
+//  tiempo de  3 segundos
+ function tiempo() {
+   $("#modal").addClass("mostrar");
+ }
+setTimeout(tiempo, 3000);
 
 
 // click por fuera
