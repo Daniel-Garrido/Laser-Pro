@@ -164,6 +164,7 @@ p{
   justify-content: center;
   /* background-color: var(--color-primario); */
   border-bottom: 1px solid #e1e1e1;
+ 
 }
 
 .header-seccion {
@@ -204,6 +205,7 @@ p{
 
 
 /* seccion 3: main  */
+
 .principal{
   width: 100%;
   display: flex;

@@ -11,6 +11,9 @@
 
   <!-- libreria fancybox -->
   <script src="Librerias/fancybox.js"></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
   <!-- libreria de animaciones -->
   <link rel="stylesheet" href="Librerias/animate.css">
 
@@ -36,7 +39,7 @@
   </a>
 
   <!-- seccion 1: Header -->
-  <header id="top" class="header">
+  <header id="top" class="header ">
 
     <section class="header-seccion">
       <div class="header-contenido-redes-sociales animacion-redes-sociales">
@@ -348,11 +351,11 @@
   
       <!-- flechas de izquierda y derecha -->
       <div class="contenedor_flechas">
-        <a href="#" id="back-button" class="arrow back">
+        <a href="" id="back-button" class="arrow back">
           <i class="fa-solid fa-chevron-left"></i>
         </a>
   
-        <a href="#" id="forward-button" class="arrow forward">
+        <a href="" id="forward-button" class="arrow forward">
           <i class="fa-solid fa-chevron-right"></i>
         </a>
       </div>
@@ -522,13 +525,14 @@
 
   <!-- seccion 11: contacto -->
   <section id="CONTACT" class="contacto">
-
+  
     <div class="contacto-contenedor">
       <!-- Estructura del formulario-->
-      <form id="formulario" class="formulario">
+      <form id="contactForm" id="formulario" class="formulario">
         <div class="titulos "><br><br>
-          <h2 class="card__title wow animate__animated animate__fadeInDownBig">Send <span class="span">a Message</span></h2>
-        
+          <h2 class="card__title wow animate__animated animate__fadeInDownBig">Send <span class="span">a Message</span>
+          </h2>
+  
           <p>
             Leave us any message, and we will get back to you
           </p><br><br>
@@ -545,10 +549,12 @@
         <div class="formulario-content">
           <button class="btn" type="submit">Submit</button>
         </div>
-      </form>
-
     </div>
-
+    </form>
+    <div id="feedback" style="display:none; color: green;">¡Mensaje enviado con éxito!</div>
+    <div id="error" style="display:none; color: red;">Error al enviar el mensaje. Intenta de nuevo.
+    </div>
+  
   </section>
 
 

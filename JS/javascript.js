@@ -111,3 +111,49 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 600);
   });
 });
+
+/**validacion de formulario  */
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name || !email || !message) {
+    alert('Por favor, completa todos los campos.');
+    return;
+  }
+
+  if (!validateEmail(email)) {
+    alert('Por favor, ingresa un correo válido.');
+    return;
+  }
+
+  // Aquí llamamos al servicio de envío de correo
+  sendEmail(name, email, message);
+});
+
+// Función para validar correo electrónico
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+function sendEmail(name, email, message) {
+  emailjs.init('TU_USER_ID'); // Sustituye con tu User ID de EmailJS
+
+  emailjs.send('tu_servicio_id', 'tu_plantilla_id', {
+    name: name,
+    email: email,
+    message: message
+  })
+  .then(() => {
+    document.getElementById('feedback').style.display = 'block';
+    document.getElementById('error').style.display = 'none';
+  })
+  .catch(() => {
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('feedback').style.display = 'none';
+  });
+}
