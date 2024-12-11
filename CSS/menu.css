@@ -56,7 +56,12 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  .nav{
+   
+    padding: 10px 0px;
+  }
   nav {
+   
     position: relative;
   }
 
@@ -67,9 +72,8 @@ nav ul li a:hover {
     align-items: flex-start;
     gap: 0;
     position: absolute;
-    top: 30px;
+    top: 40px;
     width: 90%;
-  
     left: -120%;
     transition: all 0.5s ease-in-out;
     height: 100%;
@@ -78,6 +82,7 @@ nav ul li a:hover {
   nav ul li {
     padding: 5px;
     width: 100%;
+    border-bottom: 1px solid #e1e1e1;
   }
 
   nav ul li a {

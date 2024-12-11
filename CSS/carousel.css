@@ -36,6 +36,13 @@
 }
 .slide img{
   width: 100%;
+  filter: grayscale(100%); 
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+.slide img:hover{
+  width: 100%;
+  filter: grayscale(0%);
 }
 .back {
   position: absolute; 
@@ -54,7 +61,7 @@
 
 .team-info h2 {
   font-size: 1.5rem;
-  color: #c2185b;
+  color: black;
   margin: 10px 0;
 }
 
@@ -101,11 +108,11 @@
 }
 .slide-indicator.active:after,
 .slide-indicator:hover:after {
-  background-color: #cc9900;
+  background-color: #c2185b;
 }
 /* flechas */
 .arrow {
-  background-color: #cc9900;
+  background-color: #c2185b;
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -113,7 +120,7 @@
   transition: all 0.5s;
 }
 .arrow:hover {
-  background-color: black;
+  background-color: #7a0a37;
 }
 
 

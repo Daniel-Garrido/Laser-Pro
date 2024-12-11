@@ -283,7 +283,7 @@ p{
   width: 100px;
 }
 
-.filtro{
+.filtro-about{
   position: absolute;
   z-index: 2;
   top: 0;
@@ -403,18 +403,24 @@ p{
 
 
 /*********Seccion 8: Precios****************/
+
 /* Contenedor del slider */
+
 .pircing {
   position: relative;
   width: 100%;
   overflow: hidden;
+  
 }
 
 .pircing-slide {
+  width: 100%;
   position: relative;
+  
 }
 
 .rslides {
+ 
   display: flex;
   margin: 0;
   padding: 0;
@@ -423,9 +429,9 @@ p{
 }
 
 .rslides li {
+ 
   min-width: 100%;
-  height: 400px;
-  box-sizing: border-box;
+  height: 70vh;
 }
 
 /* Información del slide */
@@ -433,8 +439,9 @@ p{
   position: absolute;
   top: 50%;
   left: 10%;
+  right: 10%;
   transform: translateY(-50%);
-  color: #fff; 
+  z-index: 100;
 }
 
 /* Controles de navegación */
@@ -446,6 +453,7 @@ p{
   justify-content: space-between;
   transform: translateY(-50%);
   z-index: 10;
+  padding: 10px;
 }
 
 .slider-controls i {
@@ -453,7 +461,12 @@ p{
   background-color: var(--color-secundario);
   padding: 10px;
   cursor: pointer;
-  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.slider-controls i:hover {
+  box-shadow: 0 8px 16px rgba(90, 57, 68, 0.5);
+  transform: scale(1.1); 
 }
 
 .rslides li img {

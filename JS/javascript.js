@@ -1,4 +1,3 @@
-
 //************funcion de fancybox para galeria de fotos*************
  Fancybox.bind('[data-fancybox="gallery"]', {
 });
@@ -6,8 +5,8 @@
 /********DESPLAZAMIENTO DEL MENU DE NAVEGACION *******/
 document.querySelectorAll('.nav-menu a').forEach(link => {
   link.addEventListener('click', event => {
-    event.preventDefault(); // Evita el comportamiento por defecto
-    const targetId = link.getAttribute('href').substring(1); // Obtén el ID del destino
+    event.preventDefault(); // Evitar el comportamiento por defecto
+    const targetId = link.getAttribute('href').substring(1); // Obtener el ID del destino
     const targetSection = document.getElementById(targetId);
     targetSection.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
   });
@@ -97,7 +96,7 @@ $(document).ready(function () {
   });
 });
 
-//ancla para el scroll
+//****ancla para el scroll ****************
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
