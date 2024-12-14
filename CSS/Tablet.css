@@ -51,7 +51,8 @@
     gap: 15px;
   }
 
- 
+
+  /*  pie de pagina  */
 
   .footer {
     padding: 20px 0px;
@@ -77,10 +78,15 @@
     padding: 20px 0px;
   }
 
-  
+  .footer-bottom{
+    flex-direction: column;
+    gap: 10px;
+   
+  }
   .footer-bottom .footer-links {
     padding: 10px;
     gap: 10px;
+   
   }
 
 

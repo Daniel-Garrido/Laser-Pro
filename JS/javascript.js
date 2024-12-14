@@ -13,7 +13,6 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 });
 
 /***Menu para dispositivos moviles ***/
-
 $(document).ready(function () {
   // Abrir y cerrar el menú al hacer clic en el ícono
   $("#icono_menu").click(function () {
@@ -51,11 +50,11 @@ $("#cerrar_modal").click(function () {
   $("#modal").removeClass("mostrar");
 })
 
-//  tiempo de  3 segundos
+//  tiempo de  30 segundos
   function tiempo() {
     $("#modal").addClass("mostrar");
   }
- setTimeout(tiempo, 3000);
+ setTimeout(tiempo, 30000);
 
 
 // click por fuera

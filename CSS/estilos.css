@@ -162,8 +162,10 @@ p{
   width: 100%;
   display: flex;
   justify-content: center;
-  /* background-color: var(--color-primario); */
+  background-color: var(--color-primario);
   border-bottom: 1px solid #e1e1e1;
+  /* position: fixed;
+  z-index: 1000; */
  
 }
 
@@ -690,6 +692,11 @@ textarea {
   color: var(--color-primario);
   padding: 40px 0px;
 }
+.footer h3 {
+  font-size: var(--subtitulos2);
+  font-family: var(--tipografia1);
+  padding-bottom: 10px;
+}
 
 .footer-container {
   display: flex;
@@ -703,16 +710,23 @@ textarea {
 .footer-section {
   flex: 1;
   width: 25%;
+  padding-bottom: 50px;
+}
+
+.footer-section p{
+  padding-top: 10px;
 }
 
 .footer-section ul {
   list-style: none;
-  padding: 0;
+  padding-bottom: 0px;
+
 }
+
 
 .footer-section ul li a {
   text-decoration: none;
-  color: #c5c6c7;
+  color: var(--color-fondo-hover-3);
   transition: color 0.3s ease;
 }
 
@@ -720,26 +734,11 @@ textarea {
   color: var(--color-secundario);
 }
 
-.footer-social {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.footer-social i {
-  font-size: 1.2rem;
-  color: #c91d58;
-  cursor: pointer;
-}
-
-.footer-social i:hover {
-  color: #ffffff;
-}
 
 .news-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 15px;
 }
 
@@ -760,19 +759,19 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
   border-top: 1px solid #c5c6c7;
-  font-size: 0.9rem;
+  padding: 20px;
 }
 
 .footer-bottom .footer-links {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+ ;
 }
 
 .footer-bottom .footer-links a {
   text-decoration: none;
-  color: #c5c6c7;
+  color: var(--color-fondo-hover-3);
   transition: color 0.3s ease;
 }
 
