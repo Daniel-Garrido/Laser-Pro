@@ -133,25 +133,25 @@ p{
 .filtro:hover{
   filter: grayscale(0%);
 }
-/* animacion a las redes sociales  */
+
+/**** animacion a las redes sociales  *****/
 .animacion-redes-sociales{
   perspective: 1000px; 
 }
 
-
-
 /* Estilo base para los íconos */
 .animacion-redes-sociales i {
-  font-size: 24px;
+  font-size: 30px;
   color: #555;
   margin: 0 10px;
   transition: transform 0.8s ease, color 0.8s ease; 
   display: inline-block; 
+ 
 }
 
 /* Efecto 3D al hacer hover */
 .animacion-redes-sociales i:hover {
-  transform: rotateY(360deg); 
+  transform: rotateY(360deg);  
 }
 
 
